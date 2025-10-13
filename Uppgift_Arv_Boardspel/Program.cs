@@ -10,14 +10,14 @@ namespace Uppgift_Arv_Boardspel
             Board board = new Board();
             int pin = random.Next(10, 20);
             board.SetUp (pin);
-            Console.WriteLine(board.SetUpPins);
+            Console.WriteLine($"brädet har {pin}");
 
-            while (board.SetUpPins >= 0)
-            {
-                Console.WriteLine(board.SetUpPins);
-              board.TakePins();
+            //while (board.SetUp >= 0)
+            //{
+            //    Console.WriteLine(board.SetUp);
+            //  board.TakePins();
                 
-            }
+            //}
             
             
             

@@ -12,19 +12,23 @@ namespace Uppgift_Arv_Boardspel.Game
         public int NumberOfPins {  get; set; }
        
 
-        public int SetUp(int pins)
-        { 
-
-            return pins; 
+        public void SetUp(int pins)
+        {
+            NumberOfPins = pins;
+             
         }
 
-        public virtual int TakePins(int pins) 
+        public void TakePins(int pins) 
         { 
-            SetUpPins -=2;
+            NumberOfPins -= pins;
             //Console.WriteLine(SetUpPins);
-            return SetUpPins; 
+             
         }
 
+        public int GetNumberOfPins()
+        {
+         return NumberOfPins;
+        }
 
     }
 }

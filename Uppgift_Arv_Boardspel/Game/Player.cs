@@ -21,7 +21,7 @@ namespace Uppgift_Arv_Boardspel.Game
             return UserID;
         }
 
-        public abstract int TakePins(Board);
+        public abstract int TakePins(Board board);
         
 
     }
