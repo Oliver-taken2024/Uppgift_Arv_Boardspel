@@ -12,9 +12,11 @@ namespace Uppgift_Arv_Boardspel.Game
         {
         }
 
-        public override int TakePins(Board board)
+        public override int TakePins(Board board)// slumpar en siffra mellan 1 och 2
         {
-            throw new NotImplementedException();
+            Random random = new Random();
+            int Take = random.Next(1-2);
+            return Take;
         }
     }
 }

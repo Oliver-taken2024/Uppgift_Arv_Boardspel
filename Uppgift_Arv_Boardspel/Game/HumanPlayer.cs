@@ -14,7 +14,8 @@ namespace Uppgift_Arv_Boardspel.Game
 
         public override int TakePins(Board board)
         {
-            throw new NotImplementedException();
+           int pins =Convert.ToInt32(Console.ReadLine());//För hoppnings vis gör detta så att varje gång jag kallar på metoden så körs console.readline
+            return pins;
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Uppgift_Arv_Boardspel.Game
             return UserID;
         }
 
-        public abstract int TakePins(Board board);
+        public abstract int TakePins(Board board);// vet fortsfarande inte varför jag använder Board men förstår lite varför jag gör den abstract tror jag
         
 
     }
