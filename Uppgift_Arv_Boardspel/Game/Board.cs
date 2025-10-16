@@ -21,12 +21,13 @@ namespace Uppgift_Arv_Boardspel.Game
         public void TakePins(int pins) //tar bort pinar
         { 
             NumberOfPins -= pins;
-            //Console.WriteLine(SetUpPins);
+            Console.WriteLine( NumberOfPins );
              
         }
 
         public int GetNumberOfPins()// skriver ut hur många pinar som finns kvar
         {
+            
          return NumberOfPins;
         }
 

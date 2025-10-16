@@ -8,18 +8,32 @@ namespace Uppgift_Arv_Boardspel
         {
             Random random = new Random();
             Board board = new Board();
-            int pin = random.Next(10, 20);
+            Player computerPlayer = new ComputerPlayer("Comp");
+            Player humanPlayer = new HumanPlayer("Me");
+            int pin = random.Next(10, 21);//Slumpar mellan 10 - 20
             board.SetUp (pin);
-            Console.WriteLine($"brädet har {pin}");
+            Console.WriteLine($"brädet har {pin} pinar");
 
-            //while (board.SetUp >= 0)
-            //{
-            //    Console.WriteLine(board.SetUp);
-            //  board.TakePins();
+            Player currentPlayer = computerPlayer;
+            int Player= random.Next(1, 3);
+
+            if (Player == 1)//bestämmer vem som ska börja
+            {
+                currentPlayer = humanPlayer;
+            }
+            else 
+            {
+                currentPlayer = computerPlayer;
+            }
+            while( board.NumberOfPins != 0 && board.NumberOfPins>=0)
+            { 
+                    currentPlayer = (currentPlayer == humanPlayer) ? computerPlayer : humanPlayer;//Byter vems tur det är
+                    currentPlayer.TakePins(board);
+            }
+            Console.WriteLine($"Game over {currentPlayer.UserID}");
+
+            
                 
-            //}
-            
-            
             
         }
     }
