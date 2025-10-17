@@ -13,6 +13,7 @@ namespace Uppgift_Arv_Boardspel
             int pin = random.Next(10, 21);//Slumpar mellan 10 - 20
             board.SetUp (pin);
             Console.WriteLine($"brädet har {pin} pinar");
+            Console.WriteLine("spelarna kan bara ta en eller två pinar per runda");
 
             Player currentPlayer = computerPlayer;
             int Player= random.Next(1, 3);

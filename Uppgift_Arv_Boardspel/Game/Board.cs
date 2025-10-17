@@ -12,22 +12,19 @@ namespace Uppgift_Arv_Boardspel.Game
         public int NumberOfPins {  get; set; }
        
 
-        public void SetUp(int pins) //ser till så att det ställs upp pinar
+        public void SetUp(int pins) //ser till att det ställs upp pinar
         {
-            NumberOfPins = pins;
-             
+            NumberOfPins = pins;   
         }
 
         public void TakePins(int pins) //tar bort pinar
         { 
             NumberOfPins -= pins;
             Console.WriteLine( NumberOfPins );
-             
         }
 
         public int GetNumberOfPins()// skriver ut hur många pinar som finns kvar
         {
-            
          return NumberOfPins;
         }
 
