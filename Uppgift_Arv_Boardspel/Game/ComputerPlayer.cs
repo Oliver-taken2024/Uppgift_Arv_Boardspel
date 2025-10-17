@@ -34,6 +34,10 @@ namespace Uppgift_Arv_Boardspel.Game
             {
                 Take = 1;
             }
+            else if (board.NumberOfPins == 1)
+            {
+                Take = 1;
+            }
             else
             {
                 Take = random.Next(1, 3);
