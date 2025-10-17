@@ -27,11 +27,12 @@ namespace Uppgift_Arv_Boardspel
                 currentPlayer = computerPlayer;
             }
             while( board.NumberOfPins != 0 && board.NumberOfPins>=0)
-            { 
-                    currentPlayer.TakePins(board);
+            {
                 currentPlayer = (currentPlayer == humanPlayer) ? computerPlayer : humanPlayer;//Byter vems tur det är
+                    currentPlayer.TakePins(board);
+                
             }
-            Console.WriteLine($"Game over {currentPlayer.UserID}");
+            Console.WriteLine($"Game over {currentPlayer.GetUserId()}");
 
             
                 
