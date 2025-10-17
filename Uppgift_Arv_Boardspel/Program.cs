@@ -28,8 +28,8 @@ namespace Uppgift_Arv_Boardspel
             }
             while( board.NumberOfPins != 0 && board.NumberOfPins>=0)
             { 
-                    currentPlayer = (currentPlayer == humanPlayer) ? computerPlayer : humanPlayer;//Byter vems tur det är
                     currentPlayer.TakePins(board);
+                currentPlayer = (currentPlayer == humanPlayer) ? computerPlayer : humanPlayer;//Byter vems tur det är
             }
             Console.WriteLine($"Game over {currentPlayer.UserID}");
 
